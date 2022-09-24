@@ -1,3 +1,8 @@
+<?php 
+    session_start();
+    require_once 'connect.php';
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -11,10 +16,10 @@
 
 <body>
 
-    <form action="search.php" method="POST">
-        <input type="text" placeholder="Имя">
-        <input type="text" placeholder="Фамилия">
-        <input type="text" placeholder="Отчество">
+    <form action="search.php" method="POST" >
+        <input name="firstname" type="text" placeholder="Имя">
+        <input name="lastname" type="text" placeholder="Фамилия">
+        <input name="midname" type="text" placeholder="Отчество">
         <button type="submit">Далее</button>
     </form>
 
